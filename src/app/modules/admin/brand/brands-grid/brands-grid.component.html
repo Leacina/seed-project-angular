@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="po-row">
+      <po-button class="po-md-2" (p-click)="onCreate()" p-label="Incluir Novo" > </po-button>
+  </div>
+  <div class="po-row">
+      <po-page-list
+      p-title="Lista de marcas"
+      [p-disclaimer-group]="disclaimerGroup"
+      [p-filter]="filterSimpleSettings"
+      >
+        <po-table
+          p-container="shadow"
+          p-height="400"
+          p-sort="true"
+          p-striped="true"
+          [p-columns]="hiringProcessesColumns"
+          [p-items]="hiringProcessesFiltered"
+          [p-show-more-disabled]="hasNext"
+          [p-loading-show-more]="isLoading"
+          (p-show-more)="showMore($event)"
+        >
+        <ng-template p-table-column-template [p-property]="'typeId'" let-value>
+          <po-button class='po-m-2' (p-click)="openBrandEdit(value)" p-label="Editar" >{{ value | uppercase }} </po-button>
+        </ng-template>
+      </po-table>
+    </po-page-list>
+  </div>
+</div>

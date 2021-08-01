@@ -1,0 +1,51 @@
+// Variables
+$light-color: #fff;
+
+$dark-color: #000;
+
+$gray-color: #dedede;
+$gray-light-color: #efefef;
+$gray-lighter-color: #f3f3f3;
+
+$red-color: #e00505;
+
+$green-color: #288203;
+
+$yellow-color: #fbd924;
+
+$primary-color: #455a64;
+$primary-light-color: #78909c;
+$primary-lighter-color: #cfd8dc;
+
+$accent-color: #404260;
+$accent-lighter-color: #e1f5fe;
+
+// Mixins
+@mixin app-background {
+  background: linear-gradient(90deg, rgba(72,79,128,1) 0%, rgba(68,72,113,1) 40%, rgba(70,76,121,1) 73%, rgba(72,79,128,1) 100%, rgba(43,39,112,1) 100%, rgba(9,8,115,1) 100%, rgba(9,9,121,1) 100%, rgba(8,8,113,1) 100%, rgba(7,7,103,1) 100%, rgba(6,5,88,1) 100%, rgba(2,2,78,1) 100%, rgba(5,3,72,1) 100%, rgba(5,3,69,1) 100%, rgba(5,3,68,1) 100%, rgba(5,3,68,1) 100%, rgba(62,63,88,1) 100%)
+              $accent-color repeat right -10px center;
+  background-size: auto 400px;
+}
+
+@mixin button-background {
+  --color-button-color: white;
+  --color-button-border:#6d6ba3;
+  --color-button-background-color: #6d6ba3;
+  --color-button-border-hover: #6d6ba3;
+
+  --color-button-color-hover: #6d6ba3;
+  --color-accordion-item-header-button-focus: #6d6ba3;
+
+  --color-button-background-color-primary: #6d6ba3;
+  --color-button-border-primary:#6d6ba3;
+  --color-button-color-primary: white;
+
+  --color-button-background-color-primary-hover:  white;
+  --color-button-border-primary-hover: #6d6ba3;
+  --color-button-color-primary-hover:  #6d6ba3;
+
+  --color-button-background-color-primary-pressed: white;
+  --color-button-border-primary-pressed: #6d6ba3;
+  --color-button-color-primary-pressed: #6d6ba3;
+}
+

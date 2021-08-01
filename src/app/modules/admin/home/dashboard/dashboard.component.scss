@@ -1,0 +1,23 @@
+.logo {
+  width: 300%;
+  max-width: 50%;
+  margin-top: 50px;
+
+  margin-left: 250px;
+
+  @media (max-width: 800px) {
+    margin-left: 150px;
+    width: 500%;
+  }
+
+  @media (max-width: 400px) {
+    margin-left: 50px;
+    width: 500%;
+  }
+}
+
+.container {
+  margin-bottom: 80px;
+}
+
+

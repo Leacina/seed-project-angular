@@ -1,0 +1,20 @@
+<form class="signin-form">
+  <!-- LOGIN -->
+  <div class="login">
+    <h1>TITLE</h1>
+    <p>Bem vindo! Por favor faça login em sua conta</p>
+    <div class="form" [formGroup]="authGroup">
+      <div class="po-row">
+        <po-input class="po-md-12" p-clean p-placeholder="Usuário" formControlName="email"  p-icon="po-icon-user"> </po-input>
+      </div>
+      <div class="po-row">
+        <po-password class="po-md-12" p-clean p-placeholder="Senha" formControlName="password" > </po-password>
+      </div>
+      <div class="po-row">
+        <po-checkbox class="po-md-6" name="checkbox" p-label="Me lembre"> </po-checkbox>
+        <a class="po-md-6" (click)="onRecovery()" [routerLink]="">Esqueci minha senha</a>
+      </div>
+    </div>
+    <po-button class="po-md-3" (p-click)="onLogin()" p-label="Login" > </po-button>
+  </div>
+</form>

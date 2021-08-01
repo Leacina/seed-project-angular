@@ -1,0 +1,15 @@
+<div class="container" [formGroup]="formGroup">
+
+  <div class="po-row">
+      <po-input class="po-md-4" p-clean p-required="true" formControlName="marca" p-label="MARCA">
+      </po-input>
+  </div>
+  <div class="po-row">
+      <po-input class="po-md-4" p-clean p-required="true" formControlName="pais" p-label="PAÍS">
+      </po-input>
+  </div>
+  <div class="button po-row">
+      <po-button class="po-md-2" p-label="GRAVAR" (p-click)="onSave()">
+      </po-button>
+  </div>
+</div>

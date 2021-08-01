@@ -1,0 +1,10 @@
+@import './../../../../../styles/app-styles-support.scss';
+
+.container {
+  margin: 0px;
+  @include button-background;
+
+  .table {
+    margin-top: 80px;
+  }
+}

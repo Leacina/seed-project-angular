@@ -1,0 +1,16 @@
+<form class="signin-form">
+  <!-- LOGIN -->
+  <div class="login">
+    <h1>TITLE</h1>
+    <p>Digite a sua nova senha</p>
+    <div class="form" [formGroup]="authGroup">
+      <div class="po-row">
+        <po-password class="po-md-12" p-no-autocomplete="false" p-clean p-placeholder="Senha" formControlName="password_confirm" > </po-password>
+      </div>
+      <div class="po-row">
+        <po-password class="po-md-12" p-no-autocomplete="false" p-clean p-placeholder="Confirme sua senha" formControlName="password" > </po-password>
+      </div>
+    </div>
+    <po-button class="po-md-3" (p-click)="onRecovery()" p-label="Alterar senha" > </po-button>
+  </div>
+</form>

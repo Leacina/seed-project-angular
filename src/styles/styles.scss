@@ -1,0 +1,96 @@
+:root {
+  --color-primary: #43425d;
+
+  /**
+    BUTTON
+  */
+  --color-button-color: white;
+  --color-button-border:#43425d;
+  --color-button-background-color: #43425d;
+  --color-button-border-hover: #43425d;
+
+  --color-checkbox-box-shadow-color-focusable: --color-primary;
+
+  /**
+    MENU
+  */
+  --color-menu-background-color-menu: #43425d;
+  --color-menu-color-menu-item-text: #fff;
+
+  --color-menu-background-color-item-selected:#3c3b53;
+  --color-menu-color-menu-item-selected: #fff;
+
+  --color-menu-border-color-menu-item-selected: #a3a0fb;
+  --color-menu-border-left-item: #43425d;
+  --color-menu-border-top-item-grouper-up-hover: #43425d;
+  --color-menu-border-top-logo: #43425d;
+  --color-menu-border-top-collapse-button:#43425d;
+
+  --color-menu-color-menu-sub-item-text: #fff;
+  --color-menu-color-menu-sub-item-selected: #fff;
+
+  --color-menu-background-color-sub-items: #43425d;
+  --color-menu-background-color-sub-item-selected: #3c3b53;
+
+  --color-menu-background-color-item-grouper-up-hover: #43425d;
+  --color-menu-background-color-item-hover: #43425d;
+
+  --color-combo-background-color-scrollbar: #a3a0fb;
+  --color-multiselect-background-color-scrollbar: #43425d;
+  .po-menu-item {
+    font-size: .72em;
+    opacity: .8;
+  }
+
+  .po-menu-item-level-two {
+    padding-left: 15px!important;
+    padding: 2px;
+    margin-left: 80px;
+  }
+
+  .po-menu-icon-item {
+    color: #a3a0fb;
+  }
+
+  .po-menu-header-template {
+    height: 60%;
+    background-color: #3c3b53;
+  }
+
+  .po-checkbox-label {
+    font-size: 1em;
+    opacity: .5;
+  }
+
+  po-page-dynamic-table {
+    width: 200%;
+    margin: 10px auto auto -256px;
+
+    @media (max-width: 1200px) {
+      margin: 10px 0px;
+    }
+  }
+
+
+  po-page-list {
+    width: 200%;
+    margin: 10px auto auto -256px;
+
+    @media (max-width: 1200px) {
+      margin: 10px 0px;
+    }
+  }
+
+  po-table {
+
+    margin: 20px auto;
+
+    @media (max-width: 1200px) {
+      margin: 10px 0px;
+    }
+  }
+
+  .po-button {
+    margin: 2px auto ;
+  }
+}

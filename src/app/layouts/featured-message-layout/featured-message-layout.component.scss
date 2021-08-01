@@ -1,0 +1,17 @@
+.featured-message-layout {
+  background-color: rgb(82, 93, 167);
+  height: 100%;
+}
+
+.message-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.message-card {
+  width: 80%;
+  max-width: 600px;
+}

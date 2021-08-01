@@ -1,0 +1,11 @@
+@import './../../../../../styles/app-styles-support.scss';
+
+.container {
+  margin: 80px;
+  margin-top: 10px;
+  @media (max-width: 800px) {
+    margin:  20px 0px 80px;
+  }
+
+  @include button-background;
+}

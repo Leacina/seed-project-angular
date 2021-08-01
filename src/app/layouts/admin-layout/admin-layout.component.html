@@ -1,0 +1,45 @@
+<div class="po-wrapper">
+  <!-- [*MainMenu] -->
+
+  <po-menu p-collapsed="true" [p-menus]="menus">
+      <div class="menu-header" *p-menu-header-template>
+        <h1 class="title">BATEU</h1>
+      </div>
+  </po-menu>
+
+  <po-page-slide p-title="Notificação" p-size="sm" #pageSlide>
+    <h2 class="po-font-title"></h2>
+
+    <section class="po-m-2">
+      <h3 class="po-font-subtitle po-mb-1" [(ngModel)]="titleNotify">{{titleNotify}}</h3>
+      <ul class="po-ml-2">
+        <li>To reveal additional navigation controls</li>
+        <li>In TV or mobile space since controls and/or space is limited</li>
+        <li>To expose a configuration panel (similar to the Module Configure Pattern)</li>
+        <li>
+          To a lesser extent to reveal help or contextual information (the partial hiding of the related content might
+          make it a poor choice for this)
+        </li>
+      </ul>
+    </section>
+
+  </po-page-slide>
+
+  <!-- [*Toolbar] -->
+  <div class="toolbar">
+      <po-toolbar
+        [p-title]="title"
+        [p-profile]="profile"
+        [p-profile-actions]="profileActions"
+        [p-notification-actions]="notificationActions"
+        [p-notification-number]="getNotificationNumber()"
+      >
+      </po-toolbar>
+  </div>
+  <po-page-default>
+    <!-- [*Router] -->
+    <router-outlet></router-outlet>
+
+  </po-page-default>
+</div>
+
